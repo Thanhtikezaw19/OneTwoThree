@@ -1,0 +1,67 @@
+.body-signup
+  .signup-form.mt-5
+    h2.text-center Create User Account
+    = form_tag "/users", method: :post do
+      .form-control
+        .row
+          = label_tag "Name:"
+          = text_field_tag :name
+        .row
+          = label_tag "Phone Number:"
+          = text_field_tag :phone_number
+        .row
+          = label_tag "Password:"
+          = password_field_tag :password
+        .row
+          = label_tag "Confirm Password:"
+          = password_field_tag :password_confirmation
+        .row.btn-signup.mt-3
+          = submit_tag  "Sign Up", class: "btn btn-create"
+
+scss:
+  body {
+    background-image: url('/imgs/img-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: left top;
+  }
+
+  .signup-form {
+    width: 25%;
+    background-color: grey;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    border-radius: 6px;
+  }
+
+  .form-control {
+    background-color: grey;
+    border: none;
+  }
+
+  .row {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .btn-signup {
+    width: 25%;
+    margin-left: 65%;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type=submit] {
+    background-color: black;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  input[type=text], input[type=password] {
+    border-radius: 4px;
+    background-color: white;
+  }
+

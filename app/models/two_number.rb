@@ -1,0 +1,2 @@
+class TwoNumber < ApplicationRecord
+end

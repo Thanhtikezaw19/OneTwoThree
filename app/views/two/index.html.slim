@@ -1,0 +1,27 @@
+.main
+  .nav
+    ul.nav-content
+      li
+        a class="active" href="#" 2D
+      li
+        a href="" 3D
+      li
+        a href="" Football
+      li
+        a href="" About
+  .main-contact
+    table
+      thead
+        tr
+          - (0...10).each do |num|
+            th Num
+            th Amount
+      tbody
+        -(0...10).each do |row|
+          tr
+            - (0...10).each do |i|
+              td ="#{row+1}"
+              td = text_field_tag "row2_col#{i+1}", nil, placeholder: "00-99", class: "input-number", data: { type: "number" }
+
+
+= stylesheet_link_tag 'two_index', media: 'all', 'data-turbolinks-track': 'reload'

@@ -3,4 +3,17 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root "sessions#new"
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  #for session
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  #for index
+  get '/index' => 'two#index'
+
 end

@@ -1,0 +1,62 @@
+.body-login
+  .login-form.mt-5
+    h1.text-center Login
+    = form_tag '/login', method: :post do
+      .main.justify-content-center.align-items-center
+        .row.mt-2
+          = label_tag :phone_number
+          = text_field_tag :phone_number
+        .row.mt-2
+          = label_tag :password
+          = password_field_tag :password
+        .row.mt-3.btn-login
+          = submit_tag "Submit"
+    .sign-up.mt-3
+      = link_to "No account yet? Sign-up here!", "/signup" , class: "signup"
+scss:
+  body {
+    background-image: url('/imgs/img-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: left top;
+  }
+
+  .login-form {
+    width: 25%;
+    background-color: grey;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    border-radius: 6px;
+  }
+
+  .row {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .btn-login {
+    width: 25%;
+    margin-left: 65%;
+  }
+
+  label {
+    font-weight:  bold;
+  }
+
+  input[type=submit] {
+    background-color: black;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  input[type=text], input[type=password] {
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .signup {
+    color: black;
+    margin-left: 35%;
+  }
+

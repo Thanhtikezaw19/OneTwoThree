@@ -59,6 +59,10 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  #set host address to IPV4 address.
+  # ip = Socket.ip_address_list.detect{|intf| intf.ipv4_private? && intf.ipv4? && intf.name.start_with?("en")}.ip_address
+  # config.hosts << ip
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 

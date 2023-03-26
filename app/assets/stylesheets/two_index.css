@@ -1,0 +1,49 @@
+.nav {
+  width: 100%;
+  text-align: center;
+  background-color: #7e7c7a;
+}
+
+.nav-content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7e7c7a;
+}
+
+.nav-content li {
+  float: left;
+}
+
+.nav-content li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+.nav-content li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  width: 5%;
+}
+
+.input-number {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
