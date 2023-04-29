@@ -36,9 +36,9 @@ table {
   width: 100%;
 }
 
-th, td {
+/* th, td {
   width: 5%;
-}
+} */
 
 .input-number {
   width: 100%;
@@ -46,4 +46,39 @@ th, td {
 
 table, th, td {
   border: 1px solid black;
+}
+
+.ttl {
+background-color: #7e7c7a;
+}
+
+.table {
+  width: 10%;
+  display: inline-block;
+}
+
+.amt-total {
+  background-color: #e9d5c2;
+  /* color: #fff; */
+}
+
+.wdth {
+  width: 24.5%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.calculation-div {
+  display: flex;
+}
+
+.amt, .amt-total {
+  text-align: end;
+}
+
+.num-row {
+  width: 2% !important;
+  background-color: antiquewhite;
+  text-align: center;
 }
