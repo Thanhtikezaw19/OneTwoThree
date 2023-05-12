@@ -4,9 +4,6 @@ class CreateCustomers < ActiveRecord::Migration[7.0]
       t.string :name, null: false
       t.integer :comission, null: false
       t.integer :odds, null: false
-      t.integer :numbers, null: false
-      t.integer :amount, null: false
-      t.integer :total_amount, null: true
       t.bigint :user_id, null: false
       t.timestamps
     end

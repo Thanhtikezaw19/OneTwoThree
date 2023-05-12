@@ -16,4 +16,11 @@ Rails.application.routes.draw do
   #for index
   get '/index' => 'two#index'
 
+  #for customer
+    # post '/customer'
+    resources :customers
+
+  #for numbers
+    get '/two_numbers' => "two_numbers#show"
+
 end

@@ -10,14 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_26_090236) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_30_073324) do
+  create_table "bet_2d", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "twod_number"
+    t.integer "twod_amount", default: 0, null: false
+    t.bigint "customer_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "fk_rails_fcb8389c20"
+  end
+
   create_table "customers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.integer "comission", null: false
     t.integer "odds", null: false
-    t.integer "numbers", null: false
-    t.integer "amount", null: false
-    t.integer "total_amount"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -37,5 +43,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_26_090236) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "bet_2d", "customers", on_delete: :cascade
   add_foreign_key "customers", "users", on_delete: :cascade
 end

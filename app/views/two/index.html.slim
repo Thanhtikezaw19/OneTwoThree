@@ -1,25 +1,19 @@
-ruby:
-  amt = TwoNumber.pluck(:amount)
 .main
   .nav
     ul.nav-content
       li
-        a class="active" href="#" 2D
+        a class="active" href="#" Two
       li
-        a href="" 3D
+        a href="" Three
       li
-        a href="" Football
+        a href="" Four
       li
         a href="" About
-  .main-contact
+  .main-contact#data-table
     .number-div
       - TwoNumber.all.in_batches(of: 10) do |batch|
         .table
           table
-            / thead
-            /   tr
-            /     th Num
-            /     th Amount
             - batch.each do |row|
               tbody
                 tr
@@ -32,16 +26,31 @@ ruby:
             td.amt-total = total
     .calculation-div
       .customer-input-div.wdth
-        text hello
+        = form_for :customer, url: new_customer_path do |f|
+          = render "customer_betting_input", f:f
       .over-div.wdth
       .carry-div.wdth
       .detail-div.wdth
 = stylesheet_link_tag 'two_index', media: 'all', 'data-turbolinks-track': 'reload'
 
 javascript:
-  document.addEventListener("DOMContentLoaded", function() {
-    setInterval(function() {
-      location.reload();
-      console.log("test");
-    }, 5000);
-  });
+  function updateNumberDiv() {
+    $.ajax({
+      url: '/index',  // Replace with the correct URL or route
+      method: 'GET',
+      success: function(response) {
+        $('.number-div').html(response);
+      },
+      error: function(xhr, status, error) {
+        console.error('Error fetching number-div content:', error);
+      }
+    });
+  }
+
+  // Call the function initially to load the number-div content
+  updateNumberDiv();
+
+  // Set an interval to reload the number-div content every 5 seconds
+  setInterval(function() {
+    updateNumberDiv();
+  }, 5000);

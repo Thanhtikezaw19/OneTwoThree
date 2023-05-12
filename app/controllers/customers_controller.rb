@@ -1,5 +1,4 @@
 class TwoController < ApplicationController
-  def index
-    @two_numbers = TwoNumber.all
+  def new
   end
 end

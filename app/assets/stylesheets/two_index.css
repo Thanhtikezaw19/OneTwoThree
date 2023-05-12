@@ -36,10 +36,6 @@ table {
   width: 100%;
 }
 
-/* th, td {
-  width: 5%;
-} */
-
 .input-number {
   width: 100%;
 }
@@ -55,6 +51,7 @@ background-color: #7e7c7a;
 .table {
   width: 10%;
   display: inline-block;
+  border: 2px solid black;
 }
 
 .amt-total {
@@ -64,9 +61,11 @@ background-color: #7e7c7a;
 
 .wdth {
   width: 24.5%;
-  height: 200px;
+  height: 500px;
   margin: 0 auto;
-  background-color: aqua;
+  border-radius: 5px;
+  background-color: #b9b5cf;
+  border: 2px solid black;
 }
 
 .calculation-div {
