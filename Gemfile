@@ -31,6 +31,8 @@ gem 'slim-rails'
 
 gem 'devise'
 
+gem 'byebug', group: :development
+
 gem 'bootstrap', '~> 5.1.3'
 
 gem 'jsbundling-rails'

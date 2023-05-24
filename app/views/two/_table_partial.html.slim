@@ -1,0 +1,31 @@
+.number-div
+      - TwoNumber.all.in_batches(of: 10) do |batch|
+        .table.mb-2
+          table
+            - batch.each do |row|
+              tbody
+                tr
+                  td.num-row = row.numbers
+                  td.amt = row.amount
+            td.amt-total Total
+            - total = 0
+            - batch.each do |ttl|
+              - total += ttl.amount
+            td.amt-total = total
+
+javascript:
+  // reload_table.js
+  document.addEventListener('DOMContentLoaded', () => {
+    setInterval(() => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'update_table', true);
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          // Replace the table content with the updated data
+          const table = document.getElementById('data-table');
+          table.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.send();
+    }, 5000); // 5000 milliseconds = 5 seconds
+  });

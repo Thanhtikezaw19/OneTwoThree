@@ -10,47 +10,14 @@
       li
         a href="" About
   .main-contact#data-table
-    .number-div
-      - TwoNumber.all.in_batches(of: 10) do |batch|
-        .table
-          table
-            - batch.each do |row|
-              tbody
-                tr
-                  td.num-row = row.numbers
-                  td.amt = row.amount
-            td.amt-total Total
-            - total = 0
-            - batch.each do |ttl|
-              - total += ttl.amount
-            td.amt-total = total
-    .calculation-div
-      .customer-input-div.wdth
-        = form_for :customer, url: new_customer_path do |f|
-          = render "customer_betting_input", f:f
-      .over-div.wdth
-      .carry-div.wdth
-      .detail-div.wdth
+    = render 'table_partial'
+  .calculation-div
+    .customer-input-div.wdth
+      .customer-container
+        = render 'two/customers/new'
+    .over-div.wdth
+    .carry-div.wdth
+    .detail-div.wdth
+
 = stylesheet_link_tag 'two_index', media: 'all', 'data-turbolinks-track': 'reload'
 
-javascript:
-  function updateNumberDiv() {
-    $.ajax({
-      url: '/index',  // Replace with the correct URL or route
-      method: 'GET',
-      success: function(response) {
-        $('.number-div').html(response);
-      },
-      error: function(xhr, status, error) {
-        console.error('Error fetching number-div content:', error);
-      }
-    });
-  }
-
-  // Call the function initially to load the number-div content
-  updateNumberDiv();
-
-  // Set an interval to reload the number-div content every 5 seconds
-  setInterval(function() {
-    updateNumberDiv();
-  }, 5000);

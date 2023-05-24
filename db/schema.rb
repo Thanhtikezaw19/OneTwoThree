@@ -11,13 +11,13 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_04_30_073324) do
-  create_table "bet_2d", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "bet2ds", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "twod_number"
     t.integer "twod_amount", default: 0, null: false
     t.bigint "customer_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["customer_id"], name: "fk_rails_fcb8389c20"
+    t.index ["customer_id"], name: "index_bet2ds_on_customer_id"
   end
 
   create_table "customers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -43,6 +43,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_30_073324) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "bet_2d", "customers", on_delete: :cascade
+  add_foreign_key "bet2ds", "customers"
   add_foreign_key "customers", "users", on_delete: :cascade
 end
