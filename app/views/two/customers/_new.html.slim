@@ -3,6 +3,7 @@
     = f.text_field :name, class: 'name-field'
     = f.text_field :comission, class: 'comission-field'
     = f.text_field :odds, class: 'odds-field'
+    = link_to '# # #', '#popup-modal', class: 'open-popup-link'
   .num-input-field.mt-2
     - unless f.object.bet_2ds.blank? || f.object.bet_2ds.last.twod_number.present?
       = f.fields_for :bet_2ds, OpenStruct.new do |b2d|
@@ -76,6 +77,15 @@ css:
   .bet-field.mt-2 {
     max-height: 360px;
     overflow-y: auto;
+  }
+
+  .open-popup-link {
+    margin-left: 10px;
+    padding: 2px 15px;
+    border: 3px inset #FFA5A5;
+    background-color: white;
+    color: black;
+    text-decoration: none;
   }
 
 

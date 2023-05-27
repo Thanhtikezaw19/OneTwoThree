@@ -18,7 +18,7 @@ class Two::CustomersController < ApplicationController
   end
 
   private
-  
+
     def customer_params
       permitted_params = params.require(:customer).permit(:name, :comission, :odds, bet_2ds_attributes: [:id, :twod_number, :twod_amount])
 
@@ -27,6 +27,5 @@ class Two::CustomersController < ApplicationController
 
       permitted_params
     end
-
 
 end

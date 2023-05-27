@@ -3,6 +3,7 @@ class TwoNumbers < ActiveRecord::Migration[7.0]
     create_table :two_numbers do |t|
       t.string :numbers
       t.integer :amount, null: false, default: 0
+      t.timestamps
     end
   end
   def down

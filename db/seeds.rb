@@ -5,10 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+today = Date.today
 TwoNumber.destroy_all
 
 (0..99).each do |num|
   num_str = num.to_s.rjust(2, '0')
 
-  TwoNumber.create(numbers: num_str)
+  TwoNumber.create(numbers: num_str, created_at: today, updated_at: today)
 end
