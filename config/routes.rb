@@ -22,15 +22,16 @@ Rails.application.routes.draw do
 
     namespace :two do
 
-      resources :customers, only: [:new, :create]
+      resources :customers
+      post '/store_input_data', to: 'customer#store_input_data'
     end
-    # get '/create_customers', to: 'two/customers#new'
-    # post '/create_customers', to: 'two/customers#create'
-    # get 'two/create_customers' => 'two/customers#new', as: :new_two_customers
-    # post 'two/create_customers' => 'two/customers#create', as: :create_two_customers
+    patch '/two/update_all_limits', to: 'two/customers#update_all_limits', as: 'update_all_limits'
 
 
-  #for numbers
+
+
+    #for numbers
     get '/two_numbers' => "two_numbers#show"
+
 
 end

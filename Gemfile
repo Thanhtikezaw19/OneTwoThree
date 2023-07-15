@@ -33,6 +33,14 @@ gem 'devise'
 
 gem 'byebug', group: :development
 
+gem 'jquery-rails'
+
+gem 'turbolinks'
+
+gem 'font-awesome-sass'
+
+gem 'popper_js', '~> 2.11.7'
+
 gem 'bootstrap', '~> 5.1.3'
 
 gem 'jsbundling-rails'

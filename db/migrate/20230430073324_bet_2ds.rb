@@ -6,6 +6,5 @@ class Bet2ds < ActiveRecord::Migration[7.0]
       t.references :customer, null: false, foreign_key: true
       t.timestamps
     end
-    # add_foreign_key :bet2ds, :customers, column: :customer_id, on_delete: :cascade
   end
 end

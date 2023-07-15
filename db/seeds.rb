@@ -11,5 +11,5 @@ TwoNumber.destroy_all
 (0..99).each do |num|
   num_str = num.to_s.rjust(2, '0')
 
-  TwoNumber.create(numbers: num_str, created_at: today, updated_at: today)
+  TwoNumber.create(numbers: num_str, created_at: today, updated_at: today, limit: 10000)
 end
