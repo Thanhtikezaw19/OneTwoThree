@@ -1,3 +1,5 @@
+ruby:
+  limit = TwoNumber.first.limit
 .number-div
       - TwoNumber.all.in_batches(of: 10) do |batch|
         .table.mb-2
@@ -5,8 +7,12 @@
             - batch.each do |row|
               tbody
                 tr
-                  td.num-row = row.numbers
-                  td.amt = row.amount
+                  - if limit && row.amount > limit
+                    td.num-row(style=(row.amount > limit ? "color: red;" : "")) = row.numbers
+                    td.amt(style=(row.amount > limit ? "color: red;" : "")) = row.amount
+                  - else
+                    td.num-row = row.numbers
+                    td.amt = row.amount
             td.amt-total Total
             - total = 0
             - batch.each do |ttl|

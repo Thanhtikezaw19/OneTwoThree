@@ -1,0 +1,24 @@
+ruby:
+  limit = TwoNumber.first.limit
+  two_numbers = TwoNumber.all
+.over-panel
+  table.tbl.mt-2
+    thead.over-hdr
+      tr
+        td #
+        td Bet
+        td Amount
+    .table-over
+      - two_numbers.each_with_index do |tn, index|
+        - if limit && tn.amount > limit
+          tbody
+            td #{index}
+            td #{tn.numbers}
+            td #{tn.amount}
+
+css:
+  .over-hdr {
+    border: 2px solid black;
+    background-color: grey;
+    color: #00ffff;
+  }

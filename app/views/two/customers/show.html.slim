@@ -1,0 +1,89 @@
+.head
+  .header
+    div.container
+      h3.header-content-left #{@customer.name}
+      = link_to 'Exit', two_customers_path, class: 'header-content-right'
+
+.customer_details
+  table
+    thead
+      tr
+        th #
+        th Cell
+        th Bet
+        th Total
+        th Time
+    tbody
+      - @customer.bet_2ds.each_with_index do |b2d, index|
+        tr
+          td= index
+          td= b2d.twod_number
+          td= b2d.twod_amount
+          td= b2d.twod_amount
+          td= b2d.created_at
+
+css:
+  head {
+    display: block;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container .header-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .container .header-content:first-child {
+    margin-right: auto;
+  }
+
+  .container .header-content:last-child {
+    margin-left: auto;
+  }
+
+  .header-content-right{
+    align-items: center;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  .header {
+    background: grey;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .header div h3 {
+    display: inline-block;
+  }
+
+  .customer_details {
+    border: 2px solid black;
+    height: auto;
+    overflow-y: auto;
+    background-color: #C0C0C4;
+  }
+
+  table tr td,
+  table tr th{
+    width: 20%;
+    border: 2px solid black;
+  }
+
+  table {
+    text-align: center;
+    margin: 0 auto;
+  }

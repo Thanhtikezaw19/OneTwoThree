@@ -1,0 +1,44 @@
+.limit-field
+  .time
+    p Date: #{Date.today}
+
+  .limit-div
+    = form_tag(update_all_limits_path, method: :patch) do
+      .input-group.d-flex
+        .w-10.mt-1
+          = label_tag :limit, "Limit:" , class: "limit-class"
+        .w-70
+          - placeholder_value = TwoNumber.first.limit # Fetch the placeholder value from the database column
+          = text_field_tag :limit, nil, class: "form-control limit-text", placeholder: placeholder_value
+      .submit
+        = submit_tag "Update", class: "btn btn-primary mt-3 st"
+
+
+
+javascript:
+
+
+css:
+  .time {
+    margin: 10px;
+    color: red;
+  }
+
+  .limit-class {
+    font-weight: bold;
+    margin: 0px 5px;
+    vertical-align: middle;
+  }
+
+  .limit-text {
+    margin-bottom: 5px;
+  }
+
+  .submit {
+    text-align: end;
+  }
+
+  .st {
+    margin-right: 30%;
+  }
+

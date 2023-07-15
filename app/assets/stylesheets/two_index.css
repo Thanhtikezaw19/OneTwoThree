@@ -81,3 +81,89 @@ background-color: #7e7c7a;
   background-color: antiquewhite;
   text-align: center;
 }
+
+.name-field, .comission-field, .odds-field, .twod-num-field, .twod-price-field {
+  border-radius: 5px;
+  border: 3px inset #FFA5A5;
+  outline: 0;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: end;
+  margin-right: 15px;
+}
+
+.btn {
+  border: 3px inset #FFA5A5;
+  width: 20%;
+  margin-left: 5px;
+  height: 33px;
+  align-items: middle;
+  line-height: 1px;
+  background-color: grey;
+  color: white;
+}
+
+.btn-link {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 1px 15px;
+  border: 3px inset #FFA5A5;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover, .btn-link:hover {
+  background-color: black;
+  color: white;
+}
+
+.name-field {
+  width: 30%;
+  margin-left: 8px;
+}
+
+.comission-field, .odds-field {
+  width: 20%;
+  margin-left: 5px;
+}
+
+.twod-num-field {
+  width: 45%;
+  margin-left: 8px;
+}
+
+.twod-price-field {
+  width: 45%;
+  margin-left: 8px;
+}
+
+.tbl {
+  width: 94%;
+  border: 3px inset black;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.bet-field.mt-2 {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.open-popup-link {
+  margin-left: 10px;
+  padding: 2px 15px;
+  border: 3px inset #FFA5A5;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.time {
+  margin: 10px;
+  color: red;
+}

@@ -3,7 +3,7 @@
     = f.text_field :name, class: 'name-field'
     = f.text_field :comission, class: 'comission-field'
     = f.text_field :odds, class: 'odds-field'
-    = link_to '# # #', '#popup-modal', class: 'open-popup-link'
+    = link_to '# # #', two_customers_path, class: 'btn-link'
   .num-input-field.mt-2
     - unless f.object.bet_2ds.blank? || f.object.bet_2ds.last.twod_number.present?
       = f.fields_for :bet_2ds, OpenStruct.new do |b2d|
@@ -42,8 +42,24 @@ css:
     margin-left: 5px;
     height: 33px;
     align-items: middle;
-    line-height: 2px;
+    line-height: 1px;
     background-color: grey;
+    color: white;
+  }
+
+  .btn-link {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 1px 15px;
+    border: 3px inset #FFA5A5;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .btn:hover, .btn-link:hover {
+    background-color: black;
     color: white;
   }
 

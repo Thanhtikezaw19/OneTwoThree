@@ -4,6 +4,15 @@ class Two::CustomersController < ApplicationController
     @customer.bet_2ds.build
   end
 
+  def index
+    @customers = Customer.all
+    @customer = Customer.first
+  end
+
+  def show
+    @customer = Customer.find(params[:id])
+  end
+
   def create
     puts params.inspect
     @customer = Customer.new(customer_params)
@@ -11,10 +20,16 @@ class Two::CustomersController < ApplicationController
 
     if @customer.save
       # redirect_to @customer, notice: 'Customer was successfully created.'
-      redirect_to  two_index_path
+      redirect_to  two_index_path, notice: 'Customer Created Successfully'
     else
       render :new
     end
+  end
+
+  def update_all_limits
+    limit = params[:limit]
+    TwoNumber.update_all(limit: limit)
+    redirect_to two_index_path, notice: 'Limits updated successfully.'
   end
 
   private
