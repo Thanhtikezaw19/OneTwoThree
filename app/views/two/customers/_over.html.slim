@@ -9,13 +9,14 @@ ruby:
         td Bet
         td Amount
     .table-over
-      - two_numbers.each_with_index do |tn, index|
+      - index = 1
+      - two_numbers.each do |tn|
         - if limit && tn.amount > limit
           tbody
             td #{index}
             td #{tn.numbers}
             td #{tn.amount}
-
+          - index += 1
 css:
   .over-hdr {
     border: 2px solid black;

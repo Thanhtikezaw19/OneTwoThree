@@ -20,7 +20,7 @@ class Two::CustomersController < ApplicationController
 
     if @customer.save
       # redirect_to @customer, notice: 'Customer was successfully created.'
-      redirect_to  two_index_path, notice: 'Customer Created Successfully'
+      redirect_to two_index_path, notice: 'Customer Created Successfully'
     else
       render :new
     end

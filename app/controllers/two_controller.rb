@@ -2,6 +2,9 @@ class TwoController < ApplicationController
   def index
     @customer = Customer.new
     @customer.bet_2ds.build
+
+    @carry = Carry.new
+    @carry.carry_2ds.build
   end
 
   def update_table

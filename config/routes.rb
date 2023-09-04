@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     namespace :two do
 
       resources :customers
+      resources :carries
       post '/store_input_data', to: 'customer#store_input_data'
     end
     patch '/two/update_all_limits', to: 'two/customers#update_all_limits', as: 'update_all_limits'

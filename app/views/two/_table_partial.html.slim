@@ -8,8 +8,8 @@ ruby:
               tbody
                 tr
                   - if limit && row.amount > limit
-                    td.num-row(style=(row.amount > limit ? "color: red;" : "")) = row.numbers
-                    td.amt(style=(row.amount > limit ? "color: red;" : "")) = row.amount
+                    td.num-row(style=(row.amount > limit ? "background-color: yellow;" : "")) = row.numbers
+                    td.amt(style=(row.amount > limit ? "background-color: yellow;" : "")) = row.amount
                   - else
                     td.num-row = row.numbers
                     td.amt = row.amount
