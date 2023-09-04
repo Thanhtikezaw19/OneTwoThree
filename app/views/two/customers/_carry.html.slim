@@ -1,0 +1,26 @@
+= form_with(model: @carry, url: two_carries_path, local: true, method: :post, data: { action: action_name }, id: 'twodcarryForm') do |f|
+  .carry-field.mt-2
+    = f.text_field :name, class: 'name-field-carry'
+    = f.text_field :comission, class: 'comission-field-carry'
+    = f.text_field :odds, class: 'odds-field-carry'
+    = link_to '# # #', two_carries_path, class: 'btn-carry-link'
+  .num-input-carry-field.mt-2.carry
+    - unless f.object.carry_2ds.blank? || f.object.carry_2ds.last.carry_2number.present?
+    = f.fields_for :carry_2ds, OpenStruct.new do |c2n|
+      = c2n.text_field :carry_2number, class: 'twod-num-field-carry', id: "carryTwodNumber", name: "carry[carry_2ds_attributes][][carry_2number]"
+      = c2n.text_field :carry_2amount, class: 'twod-price-field-carry', id: "carryTwodPrice", name: "carry[carry_2ds_attributes][][carry_2amount]", value: ""
+    .bet-carry-field.mt-2
+      table.tbl#dataCarryTable
+        thead
+          tr
+            td #
+            td Bet
+            td Amount
+        .table-carry-container
+          tbody#carryTableBody
+
+  .submit-btn
+    = f.submit 'Carry', class: 'btn'
+
+= javascript_include_tag 'carry', 'data-turbolinks-track': 'reload'
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_171422) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_15_143321) do
   create_table "bet2ds", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "twod_number"
     t.integer "twod_amount", default: 0, null: false
@@ -18,6 +18,25 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_171422) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_bet2ds_on_customer_id"
+  end
+
+  create_table "carries", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "comission", null: false
+    t.integer "odds", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "fk_rails_e216f50fe1"
+  end
+
+  create_table "carry2ds", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "carry_2number"
+    t.integer "carry_2amount", default: 0, null: false
+    t.bigint "carry_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["carry_id"], name: "index_carry2ds_on_carry_id"
   end
 
   create_table "customers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -47,5 +66,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_171422) do
   end
 
   add_foreign_key "bet2ds", "customers"
+  add_foreign_key "carries", "users", on_delete: :cascade
+  add_foreign_key "carry2ds", "carries"
   add_foreign_key "customers", "users", on_delete: :cascade
 end
