@@ -32,6 +32,8 @@ let carryrowCount = 0;
 function handleCarrySubmit(event) {
   event.preventDefault();
 
+  let hiddenCarryInput, hiddenCarryInput2;
+
   // Remove empty input fields
   const inputs = document.querySelectorAll('.num-input-carry-field.mt-2.carry input[type="text"]');
   inputs.forEach(function (input) {
@@ -47,7 +49,7 @@ function handleCarrySubmit(event) {
   // Check if twodNumber is not empty
   if (carrytwodNumber.trim() !== '') {
     // Create a new hidden input field with the entered twodNumber
-    const hiddenCarryInput = document.createElement('input');
+    hiddenCarryInput = document.createElement('input');
     hiddenCarryInput.setAttribute('type', 'hidden');
     hiddenCarryInput.setAttribute('name', 'carry[carry_2ds_attributes][][carry_2number]');
     hiddenCarryInput.setAttribute('value', carrytwodNumber);
@@ -57,7 +59,7 @@ function handleCarrySubmit(event) {
   // Check if twodPrice is not empty
   if (carrytwodPrice.trim() !== '') {
     // Create a new hidden input field with the entered twodPrice
-    const hiddenCarryInput2 = document.createElement('input');
+    hiddenCarryInput2 = document.createElement('input');
     hiddenCarryInput2.setAttribute('type', 'hidden');
     hiddenCarryInput2.setAttribute('name', 'carry[carry_2ds_attributes][][carry_2amount]');
     hiddenCarryInput2.setAttribute('value', carrytwodPrice);
@@ -66,21 +68,58 @@ function handleCarrySubmit(event) {
 
   // Create a new row in the table if at least one valid input is present
   if (carrytwodNumber.trim() !== '' || carrytwodPrice.trim() !== '') {
-    const newCarryRole = document.createElement('tr');
+    const newCarryRow = document.createElement('tr');
     carryrowCount++;
-    newCarryRole.innerHTML = `
+    newCarryRow.innerHTML = `
       <td>${carryrowCount}</td>
       <td>${carrytwodNumber}</td>
       <td>${carrytwodPrice}</td>
+      <td class="text-center"><button type="button" class="delete-carry-row-btn text-center w-100 border-0 bg-primary hover"><i class="bi bi-trash3-fill style="width: 100%; height: 100%; display: block;"></i></button></td>
     `;
 
+    // Attach a click event listener to the delete button
+    const deleteCarryButton = newCarryRow.querySelector('.delete-carry-row-btn');
+    deleteCarryButton.addEventListener('click', function () {
+      // Remove the corresponding hidden inputs when deleting the row
+      if (hiddenCarryInput) {
+        hiddenCarryInput.remove();
+      }
+      if (hiddenCarryInput2) {
+        hiddenCarryInput2.remove();
+      }
+      newCarryRow.remove();
+    });
+
     // Append the new row to the table body
-    carryTableBody.appendChild(newCarryRole);
+    carryTableBody.appendChild(newCarryRow);
+  }
+
+  // Function to validate and add a new row
+  function addCarryRowIfValid() {
+    const carrytwodNumberInput = document.getElementById('carrytwodNumber');
+    const carrytwodPriceInput = document.getElementById('carrytwodPrice');
+    const carrytwodNumber = carrytwodNumberInput.value.trim();
+    const carrytwodPrice = carrytwodPriceInput.value.trim();
+
+    // Check if the input is valid (you can add your validation logic here)
+    if (carrytwodNumber && carrytwodPrice) {
+      addTableRow(carrytwodNumber, carrytwodPrice);
+
+      // Clear the input fields
+      carrytwodNumberInput.value = '';
+      carrytwodPriceInput.value = '';
+    } else {
+      alert('Please enter valid data.');
+    }
   }
 
   // Clear the input fields
   carrytwodNumberInput.value = '';
   carrytwodPriceInput.value = '';
+
+  // Attach a click event listener to autton that adds rows
+  const addCarryButton = document.getElementById('addCarryRowButton');
+  addCarryButton.addEventListener('click', addCarryRowIfValid);
 
   // Save the input values to local storage
   saveCarryInputValues();

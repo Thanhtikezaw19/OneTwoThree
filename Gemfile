@@ -37,7 +37,8 @@ gem 'jquery-rails'
 
 gem 'turbolinks'
 
-gem 'font-awesome-sass'
+gem "font-awesome-sass", "~> 6.4.2"
+
 
 gem 'popper_js', '~> 2.11.7'
 
