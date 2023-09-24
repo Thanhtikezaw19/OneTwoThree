@@ -107,7 +107,7 @@ GEM
     execjs (2.8.1)
     ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
-    font-awesome-sass (6.4.0)
+    font-awesome-sass (6.4.2)
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -281,7 +281,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
-  font-awesome-sass
+  font-awesome-sass (~> 6.4.2)
   importmap-rails
   jbuilder
   jquery-rails

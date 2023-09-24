@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    let hiddenInput, hiddenInput2;
+
     // Remove empty input fields
     const inputs = document.querySelectorAll('.num-input-field.mt-2 input[type="text"]');
     inputs.forEach(function (input) {
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if twodNumber is not empty
     if (twodNumber.trim() !== '') {
       // Create a new hidden input field with the entered twodNumber
-      const hiddenInput = document.createElement('input');
+      hiddenInput = document.createElement('input');
       hiddenInput.setAttribute('type', 'hidden');
       hiddenInput.setAttribute('name', 'customer[bet_2ds_attributes][][twod_number]');
       hiddenInput.setAttribute('value', twodNumber);
@@ -56,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if twodPrice is not empty
     if (twodPrice.trim() !== '') {
       // Create a new hidden input field with the entered twodPrice
-      const hiddenInput2 = document.createElement('input');
+      hiddenInput2 = document.createElement('input');
       hiddenInput2.setAttribute('type', 'hidden');
       hiddenInput2.setAttribute('name', 'customer[bet_2ds_attributes][][twod_amount]');
       hiddenInput2.setAttribute('value', twodPrice);
@@ -71,23 +73,57 @@ document.addEventListener('DOMContentLoaded', function() {
         <td>${rowCount}</td>
         <td>${twodNumber}</td>
         <td>${twodPrice}</td>
+        <td class="text-center"><button type="button" class="delete-row-btn text-center w-100 border-0 bg-primary hover"><i class="bi bi-trash3-fill style="width: 100%; height: 100%; display: block;"></i></button></td>
       `;
+
+      // Attach a click event listener to the delete button
+      const deleteButton = newRow.querySelector('.delete-row-btn');
+      deleteButton.addEventListener('click', function () {
+        // Remove the corresponding hidden inputs when deleting the row
+        if (hiddenInput) {
+          hiddenInput.remove();
+        }
+        if (hiddenInput2) {
+          hiddenInput2.remove();
+        }
+        newRow.remove();
+      });
 
       // Append the new row to the table body
       tableBody.appendChild(newRow);
     }
 
+    // Function to validate and add a new row
+    function addRowIfValid() {
+      const twodNumberInput = document.getElementById('twodNumber');
+      const twodPriceInput = document.getElementById('twodPrice');
+      const twodNumber = twodNumberInput.value.trim();
+      const twodPrice = twodPriceInput.value.trim();
+
+      // Check if the input is valid (you can add your validation logic here)
+      if (twodNumber && twodPrice) {
+        addTableRow(twodNumber, twodPrice);
+
+        // Clear the input fields
+        twodNumberInput.value = '';
+        twodPriceInput.value = '';
+      } else {
+        alert('Please enter valid data.');
+      }
+    }
+
+
     // Clear the input fields
     twodNumberInput.value = '';
     twodPriceInput.value = '';
 
+    // Attach a click event listener to autton that adds rows
+    const addButton = document.getElementById('addRowButton');
+    addButton.addEventListener('click', addRowIfValid);
+
     // Save the input values to local storage
     saveInputValues();
   }
-
-
-
-
 
 
   // Function to save input values to local storage
