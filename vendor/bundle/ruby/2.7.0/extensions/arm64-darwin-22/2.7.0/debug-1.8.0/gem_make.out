@@ -1,0 +1,17 @@
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+/Users/jinxin/.asdf/installs/ruby/2.7.5/bin/ruby -I /Users/jinxin/.asdf/installs/ruby/2.7.5/lib/ruby/2.7.0 -r ./siteconf20231010-3889-1looek.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" clean
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20231010-3889-1aaqkno/debug

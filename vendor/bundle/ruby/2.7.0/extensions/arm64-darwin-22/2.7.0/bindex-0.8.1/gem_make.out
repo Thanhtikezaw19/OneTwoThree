@@ -1,0 +1,16 @@
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/jinxin/.asdf/installs/ruby/2.7.5/bin/ruby -I /Users/jinxin/.asdf/installs/ruby/2.7.5/lib/ruby/2.7.0 -r ./siteconf20231010-3889-1y94fgl.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20231010-3889-w6e990/skiptrace/internal

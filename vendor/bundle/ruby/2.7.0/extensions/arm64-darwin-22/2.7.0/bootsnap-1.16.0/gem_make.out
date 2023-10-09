@@ -1,0 +1,16 @@
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/jinxin/.asdf/installs/ruby/2.7.5/bin/ruby -I /Users/jinxin/.asdf/installs/ruby/2.7.5/lib/ruby/2.7.0 -r ./siteconf20231010-3889-11ego7i.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20231010-3889-1x8irgr/bootsnap

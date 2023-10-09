@@ -1,5 +1,5 @@
 ruby:
-  limit = TwoNumber.first.limit
+  limit = TwoNumber&.first.limit
 .number-div
       - TwoNumber.all.in_batches(of: 10) do |batch|
         .table.mb-2

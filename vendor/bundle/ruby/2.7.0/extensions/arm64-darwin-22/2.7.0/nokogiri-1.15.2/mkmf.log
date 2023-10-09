@@ -1,0 +1,792 @@
+block in append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64   -lruby.2.7   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -m64 -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -m64 -Wno-declaration-after-statement -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -O2 is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -m64 -O2 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -g is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -m64 -g -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Winline is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -m64 -Winline -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wmissing-noreturn is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -m64 -Wmissing-noreturn -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wshorten-64-to-32 is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -m64 -Wshorten-64-to-32 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wno-error=unused-command-line-argument-hard-error-in-future is accepted as CFLAGS... -------------------- no
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -m64 -Wno-error=unused-command-line-argument-hard-error-in-future -Werror -c conftest.c"
+error: unknown warning option '-Werror=unused-command-line-argument-hard-error-in-future'; did you mean '-Werror=unused-command-line-argument'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -Wno-unknown-warning-option is accepted as CFLAGS... -------------------- yes
+
+"clang -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -m64 -Wno-unknown-warning-option -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_header: checking for iconv.h... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+/* end */
+
+--------------------
+
+try_link_iconv: checking for iconv... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64   -lruby.2.7   "
+ld: Undefined symbols:
+  _iconv, referenced from:
+      _main in conftest-7a10cf.o
+  _iconv_open, referenced from:
+      _main in conftest-7a10cf.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdlib.h>
+ 4: #include <iconv.h>
+ 5: int main(void)
+ 6: {
+ 7:     iconv_t cd = iconv_open("", "");
+ 8:     iconv(cd, NULL, NULL, NULL, NULL);
+ 9:     return EXIT_SUCCESS;
+10: }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64   -lruby.2.7 -liconv  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdlib.h>
+ 4: #include <iconv.h>
+ 5: int main(void)
+ 6: {
+ 7:     iconv_t cd = iconv_open("", "");
+ 8:     iconv(cd, NULL, NULL, NULL, NULL);
+ 9:     return EXIT_SUCCESS;
+10: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_PACKAGED_LIBRARIES is accepted as CPPFLAGS... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option -DNOKOGIRI_PACKAGED_LIBRARIES conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" is accepted as CPPFLAGS... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_library: checking for -llzma... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64   -lruby.2.7 -llzma   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" is accepted as CPPFLAGS... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlParseDoc() in libxml/parser.h... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxml/parser.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xsltParseStylesheetDoc() in libxslt/xslt.h... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma  "
+conftest.c:16:57: error: use of undeclared identifier 'xsltParseStylesheetDoc'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void xsltParseStylesheetDoc();
+17: int t(void) { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for exsltFuncRegister() in libexslt/exslt.h... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libexslt/exslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return !p; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include is accepted as CPPFLAGS... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_func: checking for gumbo_parse_with_options() in nokogiri_gumbo.h... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <nokogiri_gumbo.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gumbo_parse_with_options; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlHasFeature'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlHasFeature();
+15: int t(void) { xmlHasFeature(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlFirstElementChild'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlFirstElementChild();
+15: int t(void) { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlRelaxNGSetParserStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlRelaxNGSetParserStructuredErrors();
+15: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlRelaxNGSetValidStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlRelaxNGSetValidStructuredErrors();
+15: int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlSchemaSetValidStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlSchemaSetValidStructuredErrors();
+15: int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'xmlSchemaSetParserStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlSchemaSetParserStructuredErrors();
+15: int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_location()... -------------------- yes
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_location; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_category_warning()... -------------------- no
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+conftest.c:14:57: error: use of undeclared identifier 'rb_category_warning'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warning; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warning; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option conftest.c  -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib -L/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib -L. -L/Users/jinxin/.asdf/installs/ruby/2.7.5/lib  -fstack-protector-strong  -m64  /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lruby.2.7 /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a -liconv -lz /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a -llzma /Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a  "
+ld: warning: ignoring duplicate libraries: '-liconv', '-llzma', '-lz', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/lib/libgumbo.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/lib/libxml2.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libexslt.a', '/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/lib/libxslt.a'
+ld: Undefined symbols:
+  _rb_category_warning, referenced from:
+      _t in conftest-c6e3a2.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_category_warning();
+15: int t(void) { rb_category_warning(); return 0; }
+/* end */
+
+--------------------
+
+block in append_cppflags: checking for whether -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"libgumbo:1.0.0-nokogiri\"" is accepted as CPPFLAGS... -------------------- yes
+
+"clang -E -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/arm64-darwin22 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0/ruby/backward -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include/ruby-2.7.0 -I. -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxslt/1.1.38/include -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ports/arm64-darwin22/libxml2/2.11.4/include/libxml2 -I/Users/jinxin/.asdf/installs/ruby/2.7.5/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -DNOKOGIRI_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -I/Users/jinxin/Desktop/OneTwoThree/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.15.2/ext/nokogiri/ports/arm64-darwin22/libgumbo/1.0.0-nokogiri/include -g -O2 -fno-common -pipe -std=c99 -Wno-declaration-after-statement -O2 -g -Winline -Wmissing-noreturn -Wshorten-64-to-32 -Wno-unknown-warning-option -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"libgumbo:1.0.0-nokogiri\"" conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
