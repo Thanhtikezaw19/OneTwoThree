@@ -21,8 +21,10 @@ Rails.application.routes.draw do
   #for customer
 
     namespace :two do
+      # get "/customer_details/:id", to: "customer_details#show", as: :customer_details
 
       resources :customers
+
       resources :carries
       post '/store_input_data', to: 'customer#store_input_data'
     end
